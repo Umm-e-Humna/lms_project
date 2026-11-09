@@ -30,6 +30,7 @@ public class LibraryService {
      *
      * @param book the title of the book
      */
+    // Checks book availability before issuing it.
     public void issueBook(String book) {
         if (availableBooks.remove(book)) {
             issuedBooks.add(book);
