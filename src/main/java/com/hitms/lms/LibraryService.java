@@ -25,12 +25,11 @@ public class LibraryService {
         System.out.println(book + " added to library.");
     }
 
-    /**
-     * Issues a book if it is available.
-     *
-     * @param book the title of the book
-     */
-    // Issues a book if it is available.
+   /**
+ * Issues a book if it is available and checks its availability before issuing.
+ *
+ * @param book the title of the book
+ */
     public void issueBook(String book) {
         if (availableBooks.remove(book)) {
             issuedBooks.add(book);
