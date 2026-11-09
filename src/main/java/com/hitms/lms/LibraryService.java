@@ -17,6 +17,10 @@ public class LibraryService {
      * @param book the title of the book
      */
     public void addBook(String book) {
+        if (book == null || book.isBlank()) {
+    System.out.println("Book title cannot be empty.");
+    return;
+}
         availableBooks.add(book);
         System.out.println(book + " added to library.");
     }
