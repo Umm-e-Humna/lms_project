@@ -48,4 +48,7 @@ public class LibraryService {
             System.out.println(book + " was not issued.");
         }
     }
+    public boolean findMemberById(List<String> memberIds, String memberId) {
+    return memberIds.contains(memberId);
+}
 }
